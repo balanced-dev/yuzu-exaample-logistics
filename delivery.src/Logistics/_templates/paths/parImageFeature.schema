@@ -1,0 +1,10 @@
+{
+    "refs": {
+        "/image": [
+            "/parDataImage"
+        ],
+        "/link": [
+            "/parDataLink"
+        ]
+    }
+}

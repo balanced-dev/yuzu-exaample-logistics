@@ -1,0 +1,225 @@
+{
+    "header": {
+        "nav": {
+            "navSections": [
+                {
+                    "isActive": true,
+                    "link": {
+                        "label": "Home",
+                        "href": "#",
+                        "title": ""
+                    },
+                    "subLinks": []
+                },
+                {
+                    "link": {
+                        "label": "About Us",
+                        "href": "#",
+                        "title": ""
+                    },
+                    "subLinks": []
+                },
+                {
+                    "link": {
+                        "label": "Services",
+                        "href": "#",
+                        "title": ""
+                    },
+                    "subLinks": [
+                        {
+                            "label": "Air Freight",
+                            "href": "#",
+                            "title": ""
+                        },
+                        {
+                            "label": "Ocean Freight",
+                            "href": "#",
+                            "title": ""
+                        },
+                        {
+                            "label": "Ground Shipping",
+                            "href": "#",
+                            "title": ""
+                        },
+                        {
+                            "label": "Warehousing",
+                            "href": "#",
+                            "title": ""
+                        },
+                        {
+                            "label": "Storage",
+                            "href": "#",
+                            "title": ""
+                        }
+                    ]
+                },
+                {
+                    "link": {
+                        "label": "Industries",
+                        "href": "#",
+                        "title": ""
+                    },
+                    "subLinks": []
+                },
+                {
+                    "link": {
+                        "label": "Blog",
+                        "href": "#",
+                        "title": ""
+                    },
+                    "subLinks": []
+                },
+                {
+                    "link": {
+                        "label": "Contact",
+                        "href": "#",
+                        "title": ""
+                    },
+                    "subLinks": []
+                }
+            ],
+            "_ref": "/parSiteNav",
+            "yuzu-path": "/header/nav"
+        },
+        "companyName": "Logistics",
+        "_ref": "/parSiteHeader",
+        "yuzu-path": "/header"
+    },
+    "footer": {
+        "linkSections": [
+            {
+                "title": "Quick Links",
+                "links": [
+                    {
+                        "label": "About Us",
+                        "href": "#",
+                        "title": ""
+                    },
+                    {
+                        "label": "Services",
+                        "href": "#",
+                        "title": ""
+                    },
+                    {
+                        "label": "Testimonials",
+                        "href": "#",
+                        "title": ""
+                    },
+                    {
+                        "label": "Contact Us",
+                        "href": "#",
+                        "title": ""
+                    }
+                ]
+            },
+            {
+                "title": "Products",
+                "links": [
+                    {
+                        "label": "About Us",
+                        "href": "#",
+                        "title": ""
+                    },
+                    {
+                        "label": "About Us",
+                        "href": "#",
+                        "title": ""
+                    },
+                    {
+                        "label": "About Us",
+                        "href": "#",
+                        "title": ""
+                    },
+                    {
+                        "label": "About Us",
+                        "href": "#",
+                        "title": ""
+                    }
+                ]
+            },
+            {
+                "title": "Features",
+                "links": [
+                    {
+                        "label": "About Us",
+                        "href": "#",
+                        "title": ""
+                    },
+                    {
+                        "label": "About Us",
+                        "href": "#",
+                        "title": ""
+                    },
+                    {
+                        "label": "About Us",
+                        "href": "#",
+                        "title": ""
+                    },
+                    {
+                        "label": "About Us",
+                        "href": "#",
+                        "title": ""
+                    }
+                ]
+            }
+        ],
+        "socialSection": {
+            "title": "Follow Us",
+            "links": [
+                {
+                    "type": "facebook",
+                    "link": {
+                        "label": "",
+                        "href": "#",
+                        "title": ""
+                    }
+                },
+                {
+                    "type": "twitter",
+                    "link": {
+                        "label": "",
+                        "href": "#",
+                        "title": ""
+                    }
+                },
+                {
+                    "type": "instagram",
+                    "link": {
+                        "label": "",
+                        "href": "#",
+                        "title": ""
+                    }
+                },
+                {
+                    "type": "linkedin",
+                    "link": {
+                        "label": "",
+                        "href": "#",
+                        "title": ""
+                    }
+                }
+            ]
+        },
+        "newsletterSection": {
+            "title": "Subscribe Newsletter",
+            "form": {
+                "testForm": {
+                    "fields": [
+                        {
+                            "name": "email",
+                            "placeholder": "Enter email",
+                            "type": "email",
+                            "_ref": "/parFormTextInput"
+                        }
+                    ],
+                    "submitButtonLabel": "Send",
+                    "_ref": "/parFormFooter"
+                },
+                "_ref": "/parForm",
+                "yuzu-path": "/footer/newsletterSection/form"
+            }
+        },
+        "_ref": "/parSiteFooter",
+        "yuzu-path": "/footer"
+    }
+}

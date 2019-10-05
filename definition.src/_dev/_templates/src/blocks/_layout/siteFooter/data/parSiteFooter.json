@@ -1,0 +1,122 @@
+{
+    "linkSections": [
+        {
+            "title": "Quick Links",
+            "links": [
+                {
+                    "label": "About Us",
+                    "href": "#",
+                    "title": ""
+                },
+                {
+                    "label": "Services",
+                    "href": "#",
+                    "title": ""
+                },
+                {
+                    "label": "Testimonials",
+                    "href": "#",
+                    "title": ""
+                },
+                {
+                    "label": "Contact Us",
+                    "href": "#",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "title": "Products",
+            "links": [
+                {
+                    "label": "About Us",
+                    "href": "#",
+                    "title": ""
+                },
+                {
+                    "label": "About Us",
+                    "href": "#",
+                    "title": ""
+                },
+                {
+                    "label": "About Us",
+                    "href": "#",
+                    "title": ""
+                },
+                {
+                    "label": "About Us",
+                    "href": "#",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "title": "Features",
+            "links": [
+                {
+                    "label": "About Us",
+                    "href": "#",
+                    "title": ""
+                },
+                {
+                    "label": "About Us",
+                    "href": "#",
+                    "title": ""
+                },
+                {
+                    "label": "About Us",
+                    "href": "#",
+                    "title": ""
+                },
+                {
+                    "label": "About Us",
+                    "href": "#",
+                    "title": ""
+                }
+            ]
+        }
+    ],
+    "socialSection": {
+        "title": "Follow Us",
+        "links": [
+            {
+                "type": "facebook",
+                "link": {
+                    "label": "",
+                    "href": "#",
+                    "title": ""
+                }
+            },
+            {
+                "type": "twitter",
+                "link": {
+                    "label": "",
+                    "href": "#",
+                    "title": ""
+                }
+            },
+            {
+                "type": "instagram",
+                "link": {
+                    "label": "",
+                    "href": "#",
+                    "title": ""
+                }
+            },
+            {
+                "type": "linkedin",
+                "link": {
+                    "label": "",
+                    "href": "#",
+                    "title": ""
+                }
+            }
+        ]
+    },
+    "newsletterSection": {
+        "title": "Subscribe Newsletter",
+        "form": {
+            "$ref": "/parForm_footer"
+        }
+    }
+}

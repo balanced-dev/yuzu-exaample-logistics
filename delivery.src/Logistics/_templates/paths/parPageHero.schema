@@ -1,0 +1,10 @@
+{
+    "refs": {
+        "/image": [
+            "/parDataImage"
+        ],
+        "/breadcrumbs": [
+            "/parDataLink"
+        ]
+    }
+}

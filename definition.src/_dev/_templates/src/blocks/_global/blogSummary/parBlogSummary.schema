@@ -1,0 +1,35 @@
+{
+    "id": "/parBlogSummary",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "link": {
+            "$ref": "/parDataLink"
+        },
+        "image": {
+            "$ref": "/parDataImage"
+        },
+        "title": {
+            "type": "string"
+        },
+        "summary": {
+            "type": "string"
+        },
+        "meta": {
+            "type": "object",
+            "properties": {
+                "author": {
+                    "type": "string"
+                },
+                "date": {
+                    "type": "string"
+                },
+                "category": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "additionalProperties": false
+}

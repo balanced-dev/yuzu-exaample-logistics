@@ -1,0 +1,12 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<Logistics.Core.UmbracoModels.SectionGridPage>
+@{
+    Layout = "master.cshtml";
+}
+
+@(Html.RenderFETemplate<Logistics.Core.ViewModels.vmPage_SectionGridPage>(new RenderSettings()
+    {
+        Template = "sectionGridPage",
+        MapFrom = Model,
+        ShowJson = false
+    },
+            new Dictionary<string, object>() { { "HtmlHelper", Html } }))

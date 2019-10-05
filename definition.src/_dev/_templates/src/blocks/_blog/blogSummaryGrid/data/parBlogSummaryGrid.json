@@ -1,0 +1,48 @@
+{
+    "blogSummaries": [
+        {
+            "$ref": "/parBlogSummary"
+        },
+        {
+            "$ref": "/parBlogSummary_2"
+        },
+        {
+            "$ref": "/parBlogSummary"
+        },
+        {
+            "$ref": "/parBlogSummary_2"
+        },
+        {
+            "$ref": "/parBlogSummary"
+        },
+        {
+            "$ref": "/parBlogSummary_2"
+        }
+    ],
+    "paginationLinks": [
+        {
+            "isActive": true,
+            "link": {
+                "label": "1",
+                "href": "#",
+                "title": ""
+            }
+        },
+        {
+            "isActive": false,
+            "link": {
+                "label": "2",
+                "href": "#",
+                "title": ""
+            }
+        },
+        {
+            "isActive": false,
+            "link": {
+                "label": "3",
+                "href": "#",
+                "title": ""
+            }
+        }
+    ]
+}

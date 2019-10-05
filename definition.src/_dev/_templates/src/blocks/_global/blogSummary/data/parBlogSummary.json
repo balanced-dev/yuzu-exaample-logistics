@@ -1,0 +1,13 @@
+{
+    "image": {
+        "src": "/_client/images/blog_1.jpg",
+        "alt": ""
+    },
+    "title": "Warehousing Your Packages",
+    "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.",
+    "meta": {
+        "author": "Theresa Winston",
+        "date": "Jan 18, 2019 at 2:00 pm",
+        "category": "News"
+    }
+}

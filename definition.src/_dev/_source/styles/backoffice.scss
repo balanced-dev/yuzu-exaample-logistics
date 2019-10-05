@@ -1,0 +1,29 @@
+$is-yuzu-backend: true;
+
+.yuzu-back-office {
+    // IMPORT CSS STYLESHEETS
+    @import "../css/bootstrap.min";
+    @import "../css/jquery-ui";
+    // @import "../css/owl.carousel.min";
+    @import "../css/owl.theme.default.min";
+    // @import "../css/jquery.fancybox.min";
+    @import "../css/bootstrap-datepicker";
+    // @import "../css/aos";
+
+    
+    // IMPORT SCSS
+    @import "bootstrap/functions";
+    @import "bootstrap/variables";
+    @import "bootstrap/mixins";
+
+    @import "_tools.backend-specific.scss";
+    
+    // Mock body style inheritance
+    > * {
+    }
+
+    @import "site-base";
+    @import "site-navbar";
+    @import "site-blocks";
+
+}

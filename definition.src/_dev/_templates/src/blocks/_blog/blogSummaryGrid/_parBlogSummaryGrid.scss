@@ -1,0 +1,19 @@
+.blog-summary-grid {
+
+    &__title {}
+
+    &__blog-summaries {
+
+        &__blog-summary {}
+    }
+
+    &__pagination-links {
+
+        &__pagination-link {
+
+            &__is-active {}
+
+            &__link {}
+        }
+    }
+}

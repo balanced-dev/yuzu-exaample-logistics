@@ -1,0 +1,30 @@
+{
+    "content": {
+        "rows": [
+            {
+                "config": {
+                    "borderBottom": false,
+                    "backgroundTheme": "none",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parPageHero"
+                    }
+                ]
+            },
+            {
+                "config": {
+                    "borderBottom": false,
+                    "backgroundTheme": "none",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parBlogSummaryGrid"
+                    }
+                ]
+            }
+        ]
+    }
+}

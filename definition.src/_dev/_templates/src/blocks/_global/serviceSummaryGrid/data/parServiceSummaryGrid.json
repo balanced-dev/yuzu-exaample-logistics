@@ -1,0 +1,16 @@
+{
+    "header": {
+        "$ref": "/parSectionHeader"
+    },
+    "summaries": [
+        {
+            "$ref": "/parServiceSummary"
+        },
+        {
+            "$ref": "/parServiceSummary_ocean"
+        },
+        {
+            "$ref": "/parServiceSummary_ground"
+        }
+    ]
+}

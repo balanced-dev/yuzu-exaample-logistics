@@ -1,0 +1,102 @@
+{
+    "content": {
+        "rows": [
+            {
+                "config": {
+                    "borderBottom": false,
+                    "backgroundTheme": "none",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parHomeHero"
+                    }
+                ]
+            },
+            {
+                "config": {
+                    "borderBottom": false,
+                    "backgroundTheme": "none",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parServiceSummaryGrid"
+                    }
+                ]
+            },
+            {
+                "config": {
+                    "borderBottom": false,
+                    "backgroundTheme": "none",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parImageFeatureCarousel"
+                    }
+                ]
+            },
+            {
+                "config": {
+                    "borderBottom": false,
+                    "backgroundTheme": "light",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parServiceSummaryGrid_extended"
+                    }
+                ]
+            },
+            {
+                "config": {
+                    "borderBottom": false,
+                    "backgroundTheme": "none",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parVideo"
+                    }
+                ]
+            },
+            {
+                "config": {
+                    "borderBottom": true,
+                    "backgroundTheme": "none",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parTestimonialCarousel"
+                    }
+                ]
+            },
+            {
+                "config": {
+                    "borderBottom": true,
+                    "backgroundTheme": "none",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parBlogHighlights"
+                    }
+                ]
+            },
+            {
+                "config": {
+                    "borderBottom": false,
+                    "backgroundTheme": "none",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parCta"
+                    }
+                ]
+            }
+        ]
+    }
+}

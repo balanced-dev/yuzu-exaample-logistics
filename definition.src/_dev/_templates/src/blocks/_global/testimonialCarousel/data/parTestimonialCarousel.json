@@ -1,0 +1,31 @@
+{
+    "title": {
+        "$ref": "/parSectionHeader_testimonials"
+    },
+    "testimonials": [
+        {
+            "headshot": {
+                "src": "/_client/images/person_5.jpg",
+                "alt": ""
+            },
+            "personName": "Bruce Rogers",
+            "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto."
+        },
+        {
+            "headshot": {
+                "src": "/_client/images/person_3.jpg",
+                "alt": ""
+            },
+            "personName": "John Smith",
+            "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto."
+        },
+        {
+            "headshot": {
+                "src": "/_client/images/person_2.jpg",
+                "alt": ""
+            },
+            "personName": "Christine Aguilar",
+            "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto."
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "title": "Cargo Ship",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.",
+    "image": {
+        "src": "/_client/images/img_4.jpg",
+        "alt": ""
+    },
+    "link": {
+        "label": "",
+        "href": "#",
+        "title": ""
+    }
+}

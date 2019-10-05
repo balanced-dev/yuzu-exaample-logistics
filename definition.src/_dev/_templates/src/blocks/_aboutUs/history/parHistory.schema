@@ -1,0 +1,24 @@
+{
+    "id": "/parHistory",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "title": {
+            "$ref": "/parSectionHeader"
+        },
+        "rte": {
+            "type": "string"
+        },
+        "serviceSummaries": {
+            "type": "array",
+            "items": {
+                "$ref": "/parServiceSummary"
+            }
+        },
+        "image": {
+            "$ref": "/parDataImage"
+        }
+    },
+    "additionalProperties": false
+}

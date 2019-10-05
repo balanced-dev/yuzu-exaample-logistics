@@ -1,0 +1,59 @@
+{
+    "title": {
+        "$ref": "/parSectionHeader_history"
+    },
+    "image": {
+        "src": "/_client/images/hero_bg_4.jpg",
+        "alt": ""
+    },
+    "steps": [
+        {
+            "stepNumber": 1,
+            "title": "Choose Your Service",
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.",
+            "list": [
+                {
+                    "text": "Error minus sint nobis dolor"
+                },
+                {
+                    "text": "Voluptatum porro expedita labore esse"
+                },
+                {
+                    "text": "Voluptas unde sit pariatur earum"
+                }
+            ]
+        },
+        {
+            "stepNumber": 2,
+            "title": "Select Your Payment",
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.",
+            "list": [
+                {
+                    "text": "Error minus sint nobis dolor"
+                },
+                {
+                    "text": "Voluptatum porro expedita labore esse"
+                },
+                {
+                    "text": "Voluptas unde sit pariatur earum"
+                }
+            ]
+        },
+        {
+            "stepNumber": 3,
+            "title": "Tracking your order",
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.",
+            "list": [
+                {
+                    "text": "Error minus sint nobis dolor"
+                },
+                {
+                    "text": "Voluptatum porro expedita labore esse"
+                },
+                {
+                    "text": "Voluptas unde sit pariatur earum"
+                }
+            ]
+        }
+    ]
+}

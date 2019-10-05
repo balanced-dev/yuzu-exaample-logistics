@@ -1,0 +1,9 @@
+///*------------------------------------
+//  @mixin backend-specific
+//  @description Allows different styles to be applied when viewed on the backend (e.g. in a page grid)
+//  ------------------------------------*/
+@mixin backend-specific {
+  @if $is-yuzu-backend {
+    @content;
+  }
+}

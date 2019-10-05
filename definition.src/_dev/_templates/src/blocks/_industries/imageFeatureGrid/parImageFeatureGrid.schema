@@ -1,0 +1,15 @@
+{
+    "id": "/parImageFeatureGrid",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "imageFeatures": {
+            "type": "array",
+            "items": {
+                "$ref": "/parImageFeature"
+            }
+        }
+    },
+    "additionalProperties": false
+}

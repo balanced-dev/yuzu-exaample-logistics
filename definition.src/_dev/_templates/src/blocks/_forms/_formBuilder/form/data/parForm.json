@@ -1,0 +1,21 @@
+{
+    "testForm": {
+        "fields": [
+            {
+                "name": "name",
+                "label": "Name",
+                "placeholder": "Enter name",
+                "_ref": "/parFormTextInput"
+            },
+            {
+                "name": "email",
+                "label": "Email",
+                "placeholder": "Enter email",
+                "type": "email",
+                "_ref": "/parFormTextInput"
+            }
+        ],
+        "submitButtonLabel": "Get quote",
+        "_ref": "/parFormBuilder"
+    }
+}

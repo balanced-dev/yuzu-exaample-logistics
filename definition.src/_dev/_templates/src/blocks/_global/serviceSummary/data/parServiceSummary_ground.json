@@ -1,0 +1,10 @@
+{
+    "title": "Ground Shipping",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.",
+    "icon": "frontal-truck",
+    "link": {
+        "label": "Learn More",
+        "href": "#",
+        "title": ""
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "navSections": [
+        {
+            "isActive": true,
+            "link": {
+                "label": "Home",
+                "href": "#",
+                "title": ""
+            },
+            "subLinks": []
+        },
+        {
+            "link": {
+                "label": "About Us",
+                "href": "#",
+                "title": ""
+            },
+            "subLinks": []
+        },
+        {
+            "link": {
+                "label": "Services",
+                "href": "#",
+                "title": ""
+            },
+            "subLinks": [
+                {
+                    "label": "Air Freight",
+                    "href": "#",
+                    "title": ""
+                },
+                {
+                    "label": "Ocean Freight",
+                    "href": "#",
+                    "title": ""
+                },
+                {
+                    "label": "Ground Shipping",
+                    "href": "#",
+                    "title": ""
+                },
+                {
+                    "label": "Warehousing",
+                    "href": "#",
+                    "title": ""
+                },
+                {
+                    "label": "Storage",
+                    "href": "#",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "link": {
+                "label": "Industries",
+                "href": "#",
+                "title": ""
+            },
+            "subLinks": []
+        },
+        {
+            "link": {
+                "label": "Blog",
+                "href": "#",
+                "title": ""
+            },
+            "subLinks": []
+        },
+        {
+            "link": {
+                "label": "Contact",
+                "href": "#",
+                "title": ""
+            },
+            "subLinks": []
+        }
+    ]
+}

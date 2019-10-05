@@ -1,0 +1,66 @@
+{
+    "content": {
+        "rows": [
+            {
+                "config": {
+                    "borderBottom": false,
+                    "backgroundTheme": "none",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parPageHero"
+                    }
+                ]
+            },
+            {
+                "config": {
+                    "borderBottom": false,
+                    "backgroundTheme": "none",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parHistory"
+                    }
+                ]
+            },
+            {
+                "config": {
+                    "borderBottom": false,
+                    "backgroundTheme": "none",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parStepList"
+                    }
+                ]
+            },
+            {
+                "config": {
+                    "borderBottom": true,
+                    "backgroundTheme": "none",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parTeam"
+                    }
+                ]
+            },
+            {
+                "config": {
+                    "borderBottom": false,
+                    "backgroundTheme": "none",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parTestimonialCarousel"
+                    }
+                ]
+            }
+        ]
+    }
+}

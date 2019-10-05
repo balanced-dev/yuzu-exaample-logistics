@@ -1,0 +1,13 @@
+{
+    "refs": {
+        "/title": [
+            "/parSectionHeader"
+        ],
+        "/members/headshot": [
+            "/parDataImage"
+        ],
+        "/members/socialLinks/link": [
+            "/parDataLink"
+        ]
+    }
+}

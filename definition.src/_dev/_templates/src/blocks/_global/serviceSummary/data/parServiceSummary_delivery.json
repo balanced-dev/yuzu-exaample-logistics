@@ -1,0 +1,10 @@
+{
+    "title": "Delivery Van",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.",
+    "icon": "car",
+    "link": {
+        "label": "Learn More",
+        "href": "#",
+        "title": ""
+    }
+}

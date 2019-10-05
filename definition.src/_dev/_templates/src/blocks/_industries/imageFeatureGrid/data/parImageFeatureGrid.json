@@ -1,0 +1,22 @@
+{
+    "imageFeatures": [
+        {
+            "$ref": "/parImageFeature"
+        },
+        {
+            "$ref": "/parImageFeature_air"
+        },
+        {
+            "$ref": "/parImageFeature_cargo"
+        },
+        {
+            "$ref": "/parImageFeature_cargo-ship"
+        },
+        {
+            "$ref": "/parImageFeature_warehousing"
+        },
+        {
+            "$ref": "/parImageFeature"
+        }
+    ]
+}

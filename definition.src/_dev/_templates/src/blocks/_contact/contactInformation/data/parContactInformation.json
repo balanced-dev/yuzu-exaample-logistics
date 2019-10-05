@@ -1,0 +1,45 @@
+{
+    "form": {
+        "$ref": "/parForm_contact"
+    },
+    "contactDetails": {
+        "sections": [
+            {
+                "title": "Address",
+                "text": "203 Fake St. Mountain View, San Francisco, California, USA",
+                "link": {
+                    "label": "",
+                    "href": "#",
+                    "title": ""
+                }
+            },
+            {
+                "title": "Phone",
+                "text": "",
+                "link": {
+                    "label": "+1 232 3235 324",
+                    "href": "#",
+                    "title": ""
+                }
+            },
+            {
+                "title": "Email Address",
+                "text": "",
+                "link": {
+                    "label": "youremail@domain.com",
+                    "href": "#",
+                    "title": ""
+                }
+            }
+        ]
+    },
+    "moreInfo": {
+        "title": "More Info",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ad iure porro mollitia architecto hic consequuntur. Distinctio nisi perferendis dolore, ipsa consectetur? Fugiat quaerat eos qui, libero neque sed nulla.",
+        "link": {
+            "label": "Learn more",
+            "href": "#",
+            "title": ""
+        }
+    }
+}

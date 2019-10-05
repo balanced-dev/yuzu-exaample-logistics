@@ -1,0 +1,13 @@
+{
+    "title": {
+        "$ref": "/parSectionHeader_blog-highlights"
+    },
+    "posts": [
+        {
+            "$ref": "/parBlogSummary"
+        },
+        {
+            "$ref": "/parBlogSummary_2"
+        }
+    ]
+}

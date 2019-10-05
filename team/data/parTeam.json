@@ -1,0 +1,136 @@
+{
+    "title": {
+        "$ref": "/parSectionHeader_history"
+    },
+    "members": [
+        {
+            "headshot": {
+                "src": "/_client/images/person_2.jpg",
+                "alt": ""
+            },
+            "personName": "Christine Rooster",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.",
+            "role": "CO-FOUNDER, PRESIDENT",
+            "socialLinks": [
+                {
+                    "type": "facebook",
+                    "link": {
+                        "label": "",
+                        "href": "#",
+                        "title": ""
+                    }
+                },
+                {
+                    "type": "twitter",
+                    "link": {
+                        "label": "",
+                        "href": "#",
+                        "title": ""
+                    }
+                },
+                {
+                    "type": "instagram",
+                    "link": {
+                        "label": "",
+                        "href": "#",
+                        "title": ""
+                    }
+                },
+                {
+                    "type": "linkedin",
+                    "link": {
+                        "label": "",
+                        "href": "#",
+                        "title": ""
+                    }
+                }
+            ]
+        },
+        {
+            "headshot": {
+                "src": "/_client/images/person_3.jpg",
+                "alt": ""
+            },
+            "personName": "Brandon Sharp",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.",
+            "role": "CO-FOUNDER, COO",
+            "socialLinks": [
+                {
+                    "type": "facebook",
+                    "link": {
+                        "label": "",
+                        "href": "#",
+                        "title": ""
+                    }
+                },
+                {
+                    "type": "twitter",
+                    "link": {
+                        "label": "",
+                        "href": "#",
+                        "title": ""
+                    }
+                },
+                {
+                    "type": "instagram",
+                    "link": {
+                        "label": "",
+                        "href": "#",
+                        "title": ""
+                    }
+                },
+                {
+                    "type": "linkedin",
+                    "link": {
+                        "label": "",
+                        "href": "#",
+                        "title": ""
+                    }
+                }
+            ]
+        },
+        {
+            "headshot": {
+                "src": "/_client/images/person_4.jpg",
+                "alt": ""
+            },
+            "personName": "Connor Hodson",
+            "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.",
+            "role": "MARKETING",
+            "socialLinks": [
+                {
+                    "type": "facebook",
+                    "link": {
+                        "label": "",
+                        "href": "#",
+                        "title": ""
+                    }
+                },
+                {
+                    "type": "twitter",
+                    "link": {
+                        "label": "",
+                        "href": "#",
+                        "title": ""
+                    }
+                },
+                {
+                    "type": "instagram",
+                    "link": {
+                        "label": "",
+                        "href": "#",
+                        "title": ""
+                    }
+                },
+                {
+                    "type": "linkedin",
+                    "link": {
+                        "label": "",
+                        "href": "#",
+                        "title": ""
+                    }
+                }
+            ]
+        }
+    ]
+}

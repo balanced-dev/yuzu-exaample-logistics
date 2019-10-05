@@ -1,0 +1,22 @@
+{
+    "summaries": [
+        {
+            "$ref": "/parServiceSummary"
+        },
+        {
+            "$ref": "/parServiceSummary_ocean"
+        },
+        {
+            "$ref": "/parServiceSummary_ground"
+        },
+        {
+            "$ref": "/parServiceSummary_warehouse"
+        },
+        {
+            "$ref": "/parServiceSummary_storage"
+        },
+        {
+            "$ref": "/parServiceSummary_delivery"
+        }
+    ]
+}

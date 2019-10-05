@@ -1,0 +1,28 @@
+{
+    "parSectionGrid": {
+        "refs": {
+            "/rows/config": [
+                "/parSectionGridConfig"
+            ],
+            "/rows/items": [
+                "/parBlogHighlights",
+                "/parCta",
+                "/parHomeHero",
+                "/parImageFeatureCarousel",
+                "/parVideo",
+                "/parHistory",
+                "/parStepList",
+                "/parTeam",
+                "/parBlogSummaryGrid",
+                "/parContactInformation",
+                "/parPageHero",
+                "/parServiceSummaryGrid",
+                "/parTestimonialCarousel",
+                "/parImageFeatureGrid"
+            ]
+        }
+    },
+    "anyOfTypes": [
+        "parSectionGrid"
+    ]
+}

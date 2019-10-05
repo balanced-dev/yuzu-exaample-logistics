@@ -1,0 +1,54 @@
+{
+    "content": {
+        "rows": [
+            {
+                "config": {
+                    "borderBottom": false,
+                    "backgroundTheme": "none",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parPageHero"
+                    }
+                ]
+            },
+            {
+                "config": {
+                    "borderBottom": false,
+                    "backgroundTheme": "none",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parImageFeatureGrid"
+                    }
+                ]
+            },
+            {
+                "config": {
+                    "borderBottom": false,
+                    "backgroundTheme": "light",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parServiceSummaryGrid_extended-noheading"
+                    }
+                ]
+            },
+            {
+                "config": {
+                    "borderBottom": false,
+                    "backgroundTheme": "none",
+                    "width": "full"
+                },
+                "items": [
+                    {
+                        "$ref": "/parTestimonialCarousel"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "title": "Ocean Freight",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.",
+    "icon": "sea-ship-with-containers",
+    "link": {
+        "label": "Learn More",
+        "href": "#",
+        "title": ""
+    }
+}

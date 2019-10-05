@@ -1,0 +1,10 @@
+{
+    "title": "Air Freight",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.",
+    "icon": "travel",
+    "link": {
+        "label": "Learn More",
+        "href": "#",
+        "title": ""
+    }
+}

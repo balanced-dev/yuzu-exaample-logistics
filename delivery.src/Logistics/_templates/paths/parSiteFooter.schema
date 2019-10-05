@@ -1,0 +1,13 @@
+{
+    "refs": {
+        "/linkSections/links": [
+            "/parDataLink"
+        ],
+        "/socialSection/links/link": [
+            "/parDataLink"
+        ],
+        "/newsletterSection/form": [
+            "/parDataForm^parFormFooter"
+        ]
+    }
+}

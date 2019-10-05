@@ -1,0 +1,31 @@
+{
+    "image": {
+        "src": "/_client/images/hero_bg_1.jpg",
+        "alt": ""
+    },
+    "title": "WORLDWIDE FREIGHT SERVICEs",
+    "link": {
+        "label": "Get started!",
+        "href": "#",
+        "title": ""
+    },
+    "features": [
+        {
+            "title": "Best prices",
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum odio minima tempora animi iure.",
+            "icon": "dollar"
+        },
+        {
+            "title": "get free quote",
+            "text": "",
+            "form": {
+                "$ref": "/parForm"
+            }
+        },
+        {
+            "title": "24/7 SUPPORT",
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum odio minima tempora animi iure.",
+            "icon": "phone"
+        }
+    ]
+}

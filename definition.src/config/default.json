@@ -1,0 +1,12 @@
+{
+    "trello": {
+        "board" : "Yuzu Example - logistics",
+        "list" : "",
+        "key": "450ae230d54830b207c7e3dab1f856e2",
+        "secret": "4f3db8606b76484a59ff90b781634b63c22656bd8fc15aacba228810f5c58a78"
+    },
+    "localFiles": {},
+    "prefixes": {},
+    "generationSource": "trello",
+    "dataSettings": {}
+}

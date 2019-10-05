@@ -1,0 +1,19 @@
+{
+    "image": {
+        "src": "/_client/images/hero_bg_1.jpg",
+        "alt": ""
+    },
+    "title": "Page Hero",
+    "breadcrumbs": [
+        {
+            "label": "Home",
+            "href": "/",
+            "title": ""
+        },
+        {
+            "label": "Current page",
+            "href": "/",
+            "title": ""
+        }
+    ]
+}

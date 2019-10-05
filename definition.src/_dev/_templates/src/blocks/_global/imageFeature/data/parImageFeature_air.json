@@ -1,0 +1,13 @@
+{
+    "title": "Air Transports",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore ullam minus voluptate libero.",
+    "image": {
+        "src": "/_client/images/img_2.jpg",
+        "alt": ""
+    },
+    "link": {
+        "label": "",
+        "href": "#",
+        "title": ""
+    }
+}
