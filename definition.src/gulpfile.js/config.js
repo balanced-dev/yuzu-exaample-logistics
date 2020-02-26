@@ -1,6 +1,6 @@
 const prettyjson = require('prettyjson');
 
-var projectName = 'Logistics';	
+var projectName = 'Logistics';    	
 
 base = {
 	devRoot: './_dev',
@@ -12,7 +12,7 @@ base = {
 	distTemplates: '../delivery.src/'+ projectName + '/_templates',
 };
 
-paths = {	
+paths = {
 	fonts: {
 		src: base.devSource + '/fonts',
 		dest: base.devCompiled + '/fonts/',
@@ -20,19 +20,22 @@ paths = {
 	},
 	handlebars: {
 		data: {
-			layout: base.devTemplates + '/src/_layouts/',
+			layout: base.devTemplates + '/_layouts/',
 			templates: base.devTemplates + '/data/',
 			dist: base.distTemplates + '/data/'
 		},
 		layout: {
-			src: base.devTemplates + '/layouts/'
+			src: base.devTemplates + '/_layouts/'
+		},
+		dataStuctures: {
+			src: base.devTemplates + '/_dataStructures/'
 		},
 		blocks: {
-			src: base.devTemplates + '/src/blocks/'
+			src: base.devTemplates + '/blocks/'
 		},
 		pages: {
-			src: base.devTemplates + '/src/',
-			dest: base.devTemplates + '/html/',
+			src: base.devTemplates + '/',
+			dest: base.devCompiled + '/html/',
 			dist: base.distTemplates
 		},
 		paths: {
@@ -41,12 +44,15 @@ paths = {
 		schema: {
 			dist: base.distTemplates + '/schema/'
 		},
-		xml: {
-			dest: base.devTemplates
+		templates: {
+			src: base.devTemplates + '/',
+			dest: base.devCompiled + '/html/',
+			dist: base.distTemplates,
+			distHtml: base.distClient + '/html/'
 		}
 	},
 	images: {
-		src: base.devSource + '/images/',
+		src: base.devSource + '/images',
 		dest: base.devCompiled + '/images/',
 		dist: base.distClient + '/images/'
 	},
@@ -56,41 +62,38 @@ paths = {
 		dist: base.distClient + '/js/'
 	},
 	styles: {
-		src: base.devSource + '/styles',
+		src: base.devSource + '/styles/scss',
 		dest: base.devCompiled + '/styles/',
 		dist: base.distClient + '/styles/'
-	},
-	libraryStyles: {
-		src: base.devSource + '/css',
-		dest: base.devCompiled + '/css/',
-		dist: base.distClient + '/css/'
 	}
 };
 
 files = {
-	styles: paths.styles.src + '/style.scss',
+	partialsScss: base.devTemplates + '/**/*.scss',
+	scssSetup: paths.styles.src + '/**/*.scss',
+	styles: paths.styles.src + '/frontend.scss',
 	stylesBackOffice: paths.styles.src + '/backoffice.scss',
-	libraryStyles: paths.libraryStyles.src + '/**/*.css',
 	stylesheets: paths.styles.dest + '/*.css',
 	css: paths.styles.dest + '/style.css',
 	cssDist: paths.styles.dist + '/style.css',
 	images: paths.images.src + '/**/*',
 	fonts: paths.fonts.src + '/**/*',
 	html: paths.handlebars.pages.dest + '/**/*.html',
-	js: paths.js.src + '/**/*.js',
+	js: paths.js.src + '/site/**/*.js',	
+	partialJs: base.devTemplates + '/**/*.js',
 	templateLayoutData: paths.handlebars.data.layout + 'layout.json',
 	templateLayouts: paths.handlebars.layout.src,
 	templateData: paths.handlebars.data.templates,
-	templatePartials: paths.handlebars.blocks.src,
-	templatePages: paths.handlebars.pages.src,
-	templateHTML: paths.handlebars.pages.dest,
-	templateXML: paths.handlebars.xml.dest,
+	templatePartials: [paths.handlebars.dataStuctures.src, paths.handlebars.blocks.src],
+	templates: paths.handlebars.templates.src,
+	templateHTML: paths.handlebars.templates.dest,
+  	html: paths.handlebars.templates.dest+ '**/*.html'
 };
 
 /*  Display files ouput */
-var showPaths = (done) => {
+const showPaths = (done) => {
 
-	var options = {
+	const options = {
 		keysColor: 'green',
 		dashColor: 'red',
 		stringColor: 'white',

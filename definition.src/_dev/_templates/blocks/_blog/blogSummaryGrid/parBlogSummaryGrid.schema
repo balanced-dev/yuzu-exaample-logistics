@@ -1,0 +1,28 @@
+{
+    "id": "/parBlogSummaryGrid",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "blogSummaries": {
+            "type": "array",
+            "items": {
+                "$ref": "/parBlogSummary"
+            }
+        },
+        "paginationLinks": {
+            "type": "array",
+            "items": {
+                "properties": {
+                    "isActive": {
+                        "type": "boolean"
+                    },
+                    "link": {
+                        "$ref": "/dataLink"
+                    }
+                }
+            }
+        }
+    },
+    "additionalProperties": false
+}

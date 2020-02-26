@@ -5,14 +5,14 @@ const files = require('./config').files;
 const server = require('./browser-sync'); 
 
 const dist = require('./dist'); 
-const js = require('./js');
-const misc = require('./misc');
 const style = require('./style'); 
+const js = require('./js');
 const templates = require('./templates'); 
+const assets = require('./assets'); 
 
 //load modules into gulp friendly container
 $ = require('gulp-load-plugins')({
-	pattern: ['gulp-*', 'gulp.*', 'main-*', 'yuzu-definition-*', 'yuzu-def-*', 'browser-sync', 'run-sequence', 'handlebars', 'path', 'del'],
+	pattern: ['gulp-*', 'gulp.*', 'main-*', 'yuzu-definition-*', 'yuzu-def-*', 'browser-sync', 'run-sequence', 'handlebars', 'path', 'del', 'ansi-colors', 'fancy-log'],
 	camelize: true
 }),
 
@@ -22,7 +22,7 @@ gulp.src = function() {
 	return gulp_src.apply(gulp, arguments)
 		.pipe($.plumber(function(error) {
 			// Output an error message
-			$.util.log($.util.colors.red('Error (' + error.plugin + '): ' + error.message));
+			$.fancyLog.error($.ansiColors.bold($.ansiColors.bgRed(' ERROR ') + $.ansiColors.red(' ('+ error.plugin + '): ' + error.message)));
 			// emit the end event, to properly end the task
 			this.emit('end');
 		}));
@@ -30,19 +30,15 @@ gulp.src = function() {
 
 const watch = (done) => {
 
-	gulp.watch([paths.styles.src + '/**/*.scss'], style.reload);
-	gulp.watch([files.libraryStyles], style.reload);
-	gulp.watch([files.js], js.reload);
-	gulp.watch([files.images], misc.reload);
-	gulp.watch([files.fonts], misc.reload);
-	gulp.watch([base.devTemplates + '/**/*.schema'], templates.reload);
-	gulp.watch([base.devTemplates + '/**/*.hbs'], templates.reload);
-	gulp.watch([base.devTemplates + '/**/*.json'], templates.reload);
+    gulp.watch([files.scssSetup, files.partialsScss], style.reload);
+	gulp.watch([paths.js.src + '/**/*.js', files.partialJs], js.reload);
+	gulp.watch([base.devTemplates + '/**/*.schema', base.devTemplates + '/**/*.json', base.devTemplates + '/**/*.hbs'], templates.reload);
+	gulp.watch([files.images, files.fonts], assets.reload);
 	
 	done();
 };
 
-const buildUi = gulp.parallel(templates.run, style.run, js.run, misc.run);
+const buildUi = gulp.parallel(templates.run, style.run, js.run, assets.run);
 
 exports.buildUi = buildUi;
 exports.ui = gulp.series(buildUi, watch, server.init);

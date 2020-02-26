@@ -1,0 +1,21 @@
+{
+    "id": "/parImageFeature",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string"
+        },
+        "text": {
+            "type": "string"
+        },
+        "image": {
+            "$ref": "/dataImage"
+        },
+        "link": {
+            "$ref": "/dataLink"
+        }
+    },
+    "additionalProperties": false
+}

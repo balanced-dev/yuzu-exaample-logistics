@@ -1,13 +1,13 @@
 {
     "refs": {
         "/form": [
-            "/parDataForm^parFormBuilder"
+            "/dataForm^parFormBuilder"
         ],
         "/contactDetails/sections/link": [
-            "/parDataLink"
+            "/dataLink"
         ],
         "/moreInfo/link": [
-            "/parDataLink"
+            "/dataLink"
         ]
     }
 }

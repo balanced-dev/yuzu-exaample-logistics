@@ -62,15 +62,12 @@ namespace Logistics.Core
             config.IgnoreViewmodels.Add<vmBlock_FormTextInput>();
             config.IgnoreViewmodels.Add<vmBlock_SectionGridConfig>();
 
-            config.IgnorePropertiesInViewModels.Add<vmBlock_BlogSummaryGrid, List<vmSub_BlogSummaryGridPaginationLink>>(x => x.PaginationLinks);
+
 
             config.IgnoreProperties.Add("Form");
             config.IgnoreProperties.Add("Endpoint");
 
-            config.IgnoreUmbracoModelsForAutomap.Add<SectionGridPage>();
-            config.IgnoreUmbracoModelsForAutomap.Add<ContactInformation>();
-            config.IgnoreUmbracoModelsForAutomap.Add<HomeHeroFeature>();
-            config.IgnoreUmbracoModelsForAutomap.Add<SiteFooterNewsletterSection>();
+
 
             YuzuDeliveryImport.Initialize(config);
         }

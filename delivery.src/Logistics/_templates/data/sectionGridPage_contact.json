@@ -41,36 +41,40 @@
                     {
                         "form": {
                             "testForm": {
-                                "fields": [
+                                "fieldsets": [
                                     {
-                                        "name": "first-name",
-                                        "label": "First Name",
-                                        "_ref": "/parFormTextInput"
-                                    },
-                                    {
-                                        "name": "last-name",
-                                        "label": "Last Name",
-                                        "_ref": "/parFormTextInput"
-                                    },
-                                    {
-                                        "name": "email",
-                                        "label": "Email",
-                                        "type": "email",
-                                        "_ref": "/parFormTextInput"
-                                    },
-                                    {
-                                        "name": "subject",
-                                        "label": "Subject",
-                                        "_ref": "/parFormTextInput"
-                                    },
-                                    {
-                                        "name": "message",
-                                        "label": "Message",
-                                        "placeholder": "Write your notes or questions here...",
-                                        "_ref": "/parFormTextArea"
+                                        "fields": [
+                                            {
+                                                "name": "first-name",
+                                                "label": "First Name",
+                                                "_ref": "/parFormTextInput"
+                                            },
+                                            {
+                                                "name": "last-name",
+                                                "label": "Last Name",
+                                                "_ref": "/parFormTextInput"
+                                            },
+                                            {
+                                                "name": "email",
+                                                "label": "Email",
+                                                "type": "email",
+                                                "_ref": "/parFormTextInput"
+                                            },
+                                            {
+                                                "name": "subject",
+                                                "label": "Subject",
+                                                "_ref": "/parFormTextInput"
+                                            },
+                                            {
+                                                "name": "message",
+                                                "label": "Message",
+                                                "placeholder": "Write your notes or questions here...",
+                                                "_ref": "/parFormTextArea"
+                                            }
+                                        ]
                                     }
                                 ],
-                                "submitButtonLabel": "Send message",
+                                "submitButtonText": "Send message",
                                 "_ref": "/parFormBuilder"
                             },
                             "_ref": "/parForm",

@@ -13,12 +13,12 @@
                         "type": "boolean"
                     },
                     "link": {
-                        "$ref": "./parDataLink.schema"
+                        "$ref": "/dataLink"
                     },
                     "subLinks": {
                         "type": "array",
                         "items": {
-                            "$ref": "./parDataLink.schema"
+                            "$ref": "/dataLink"
                         }
                     }
                 }

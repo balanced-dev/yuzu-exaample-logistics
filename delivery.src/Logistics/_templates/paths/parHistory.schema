@@ -7,7 +7,7 @@
             "/parServiceSummary"
         ],
         "/image": [
-            "/parDataImage"
+            "/dataImage"
         ]
     }
 }

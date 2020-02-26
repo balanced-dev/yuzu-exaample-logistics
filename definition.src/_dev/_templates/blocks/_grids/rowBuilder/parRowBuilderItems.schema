@@ -1,0 +1,53 @@
+{
+    "id": "/parRowBuilderItems",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "type": "array",
+    "items": {
+        "anyOf": [
+            {
+                "$ref": "/parBlogHighlights"
+            },
+            {
+                "$ref": "/parCta"
+            },
+            {
+                "$ref": "/parHomeHero"
+            },
+            {
+                "$ref": "/parImageFeatureCarousel"
+            },
+            {
+                "$ref": "/parVideo"
+            },
+            {
+                "$ref": "/parHistory"
+            },
+            {
+                "$ref": "/parStepList"
+            },
+            {
+                "$ref": "/parTeam"
+            },
+            {
+                "$ref": "/parBlogSummaryGrid"
+            },
+            {
+                "$ref": "/parContactInformation"
+            },
+            {
+                "$ref": "/parPageHero"
+            },
+            {
+                "$ref": "/parServiceSummaryGrid"
+            },
+            {
+                "$ref": "/parTestimonialCarousel"
+            },
+            {
+                "$ref": "/parImageFeatureGrid"
+            }
+        ]
+    },
+    "additionalProperties": false
+}

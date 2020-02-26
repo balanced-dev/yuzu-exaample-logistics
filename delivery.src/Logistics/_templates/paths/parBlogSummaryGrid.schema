@@ -4,7 +4,7 @@
             "/parBlogSummary"
         ],
         "/paginationLinks/link": [
-            "/parDataLink"
+            "/dataLink"
         ]
     }
 }

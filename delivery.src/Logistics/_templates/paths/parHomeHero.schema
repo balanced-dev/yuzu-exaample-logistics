@@ -1,13 +1,13 @@
 {
     "refs": {
         "/image": [
-            "/parDataImage"
+            "/dataImage"
         ],
         "/link": [
-            "/parDataLink"
+            "/dataLink"
         ],
         "/features/form": [
-            "/parDataForm^parFormBuilder"
+            "/dataForm^parFormBuilder"
         ]
     }
 }

@@ -5,12 +5,12 @@
     "type": "object",
     "properties": {
         "header": {
-            "$ref": "./parSectionHeader.schema"
+            "$ref": "/parSectionHeader"
         },
         "summaries": {
             "type": "array",
             "items": {
-                "$ref": "./parServiceSummary.schema"
+                "$ref": "/parServiceSummary"
             }
         },
         "_ref": {

@@ -5,7 +5,7 @@
     "type": "object",
     "properties": {
         "form": {
-            "$ref": "./parDataForm.schema",
+            "$ref": "/dataForm",
             "anyOfType": "parFormBuilder"
         },
         "contactDetails": {
@@ -22,7 +22,7 @@
                                 "type": "string"
                             },
                             "link": {
-                                "$ref": "./parDataLink.schema"
+                                "$ref": "/dataLink"
                             }
                         }
                     }
@@ -39,7 +39,7 @@
                     "type": "string"
                 },
                 "link": {
-                    "$ref": "./parDataLink.schema"
+                    "$ref": "/dataLink"
                 }
             }
         },

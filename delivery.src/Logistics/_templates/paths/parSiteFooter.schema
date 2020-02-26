@@ -1,13 +1,13 @@
 {
     "refs": {
         "/linkSections/links": [
-            "/parDataLink"
+            "/dataLink"
         ],
         "/socialSection/links/link": [
-            "/parDataLink"
+            "/dataLink"
         ],
         "/newsletterSection/form": [
-            "/parDataForm^parFormFooter"
+            "/dataForm^parFormFooter"
         ]
     }
 }

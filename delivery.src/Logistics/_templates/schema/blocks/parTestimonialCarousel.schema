@@ -5,14 +5,14 @@
     "type": "object",
     "properties": {
         "title": {
-            "$ref": "./parSectionHeader.schema"
+            "$ref": "/parSectionHeader"
         },
         "testimonials": {
             "type": "array",
             "items": {
                 "properties": {
                     "headshot": {
-                        "$ref": "./parDataImage.schema"
+                        "$ref": "/dataImage"
                     },
                     "personName": {
                         "type": "string"

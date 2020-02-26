@@ -5,10 +5,10 @@
     "type": "object",
     "properties": {
         "link": {
-            "$ref": "./parDataLink.schema"
+            "$ref": "/dataLink"
         },
         "image": {
-            "$ref": "./parDataImage.schema"
+            "$ref": "/dataImage"
         },
         "title": {
             "type": "string"

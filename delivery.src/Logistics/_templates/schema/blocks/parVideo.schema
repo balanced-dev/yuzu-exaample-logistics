@@ -5,7 +5,7 @@
     "type": "object",
     "properties": {
         "poster": {
-            "$ref": "./parDataImage.schema"
+            "$ref": "/dataImage"
         },
         "videoId": {
             "type": "string"

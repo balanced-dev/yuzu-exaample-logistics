@@ -1,0 +1,123 @@
+﻿<div class="yuzu-import-dialog umbracoDialog" ng-controller="Yuzu.Delivery.UmbracoImportViewModel.SettingsDialog as vm">
+
+    <form name="storeContactAsForm" no-validate val-form-manager>
+
+        <umb-editor-view>
+
+            <umb-editor-header name="'Settings for '+ vm.dialogData.item.viewmodel"
+                               name-locked="true"
+                               hide-alias="true"
+                               hide-icon="true"
+                               hide-description="true">
+            </umb-editor-header>
+
+            <umb-editor-container>
+                <umb-load-indicator ng-if="vm.loading">
+                </umb-load-indicator>
+
+                <div class="umb-pane" ng-if="!vm.loading">
+
+                    <umb-box>
+                        <umb-box-content>
+
+                            <umb-control-group label="Store Content As">
+
+                                <select ng-model="vm.storeContentAs.type" ng-change="vm.change()" class="input-block-level">
+                                    <option ng-value="0">Inline</option>
+                                    <option ng-value="1">Global</option>
+                                    <option ng-value="2">New Group</option>
+                                </select>
+                                <p ng-if="vm.storeContentAs.type == 0">Parent property as nested content<br />This content is added inline</p>
+                                <p ng-if="vm.storeContentAs.type == 1">Parent property as content picker<br />This content is added to the content tree</p>
+                                <p ng-if="vm.storeContentAs.type == 2">Parent adds a new group<br />This content is added to the new group</p>
+
+                            </umb-control-group>
+
+                        </umb-box-content>
+                    </umb-box>
+
+                    <umb-box ng-if="!vm.isValidType(vm.storeContentAs.type)" class="bg-danger">
+                        <umb-box-content>
+                            <h4>Not Available</h4>
+                            <hr>
+                            <p>
+                                {{vm.validationErrors[vm.storeContentAs.type]}}
+                            </p>
+                        </umb-box-content>
+                    </umb-box>
+
+                    <umb-box ng-if="vm.showType(0)">
+                        <umb-box-content>
+                            <umb-control-group label="Document Type Name">
+                                <input type="text" class="umb-textstring textstring input-block-level" ng-model="vm.item.documentTypeName">
+                            </umb-control-group>
+                        </umb-box-content>
+                    </umb-box>
+
+                    <umb-box ng-if="vm.showType(1) || vm.showType(2)">
+                        <umb-box-content>
+                            <h4>Schema</h4>
+                            <umb-control-group label="Merge with Document Type">
+                                <select ng-model="vm.item.documentTypeAlias">
+                                    <option ng-value="''" ng-if="vm.storeContentAs.type == 1">None</option>
+                                    <option ng-repeat="option in vm.contentTypes" ng-selected="vm.item.documentTypeAlias == option.alias" ng-value="option.alias">{{option.name}}</option>
+                                </select>
+                            </umb-control-group>
+
+                            <umb-control-group label="Group Name" ng-if="(vm.storeContentAs.type == 2) || (vm.storeContentAs.type == 1 && vm.item.documentTypeAlias)">
+                                <input type="text" placeholder="Summary" class="umb-textstring textstring input-block-level" ng-model="vm.storeContentAs.groupName" />
+                                <div><small>Leave blank to use default group</small></div>
+                            </umb-control-group>
+                        </umb-box-content>
+                    </umb-box>
+
+                    <umb-box ng-if="vm.showType(1)">
+                        <umb-box-content>
+                            <h4>Content</h4>
+                            <umb-control-group label="Parent Node" required="true">
+                                <yuzu-content-import-picker settings="vm.contentEditorSettings" value="vm.storeContentAs.parentContentId"></yuzu-content-import-picker>
+
+                                <span ng-messages="storeContactAsForm.parentContentId.$error" show-validation-on-submit>
+                                    <span class="help-inline" ng-message="required"><localize key="general_required">Required</localize></span>
+                                </span>
+                            </umb-control-group>
+
+                            <umb-control-group label="Add Area Node">
+                                <umb-toggle checked="vm.storeContentAs.addAreaNode" on-click="vm.toggle()"></umb-toggle>
+                            </umb-control-group>
+
+                            <umb-control-group label="Primary Key Property Name" required="true">
+                                <input type="text" placeholder="Title" class="umb-textstring textstring input-block-level" name="primaryPropertyName" ng-model="vm.storeContentAs.primaryPropertyName" required />
+
+                                <span ng-messages="storeContactAsForm.primaryPropertyName.$error" show-validation-on-submit>
+                                    <span class="help-inline" ng-message="required"><localize key="general_required">Required</localize></span>
+                                </span>
+                            </umb-control-group>
+                        </umb-box-content>
+                    </umb-box>
+
+                </div>
+
+            </umb-editor-container>
+
+            <umb-editor-footer>
+                <umb-editor-footer-content-right>
+                    <umb-button type="button"
+                                button-style="link"
+                                label-key="general_close"
+                                shortcut="esc"
+                                action="vm.close()">
+                    </umb-button>
+                    <umb-button type="button"
+                                button-style="success"
+                                label-key="general_submit"
+                                action="vm.submit()">
+                    </umb-button>
+                </umb-editor-footer-content-right>
+            </umb-editor-footer>
+
+        </umb-editor-view>
+
+    </form>
+
+</div>

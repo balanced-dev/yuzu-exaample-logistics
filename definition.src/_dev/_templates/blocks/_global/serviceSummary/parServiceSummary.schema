@@ -1,0 +1,21 @@
+{
+    "id": "/parServiceSummary",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string"
+        },
+        "text": {
+            "type": "string"
+        },
+        "icon": {
+            "type": "string"
+        },
+        "link": {
+            "$ref": "/dataLink"
+        }
+    },
+    "additionalProperties": false
+}

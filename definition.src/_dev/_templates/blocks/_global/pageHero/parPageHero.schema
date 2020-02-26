@@ -1,0 +1,21 @@
+{
+    "id": "/parPageHero",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "image": {
+            "$ref": "/dataImage"
+        },
+        "title": {
+            "type": "string"
+        },
+        "breadcrumbs": {
+            "type": "array",
+            "items": {
+                "$ref": "/dataLink"
+            }
+        }
+    },
+    "additionalProperties": false
+}

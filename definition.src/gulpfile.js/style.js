@@ -2,53 +2,56 @@ const gulp = require('gulp');
 const paths = require('./config').paths; 
 const files = require('./config').files; 
 const server = require('./browser-sync'); 
+const sassdoc = require('sassdoc');
 
-// Clean all partials from temp dir
-// const cleanStylePartials = () => {
-
-//     return $.del([ paths.styles.partials + '/*.scss' ]);
-// };
-
-// Copy all the partial sass files from block directories and put in style dir
-// const loadStylePartials = () => {
-
-//     return gulp.src(files.partialscss)
-//         .pipe($.flatten())
-//         .pipe(gulp.dest(paths.styles.partials));
-// };
-
-// Copy library stylesheets
-const libStyles = (done) => {
-    
-  gulp.src(files.libraryStyles)
-      .pipe(gulp.dest(paths.libraryStyles.dest));
-
-  done();
-};
-
-// Build Scss Style
-const buildStyle = () => {
-    
+// Build Frontend SCSS Style
+const buildStyles = () => {
     return gulp.src(files.styles)
       .pipe($.sourcemaps.init())
-      .pipe($.sassBulkImport())
+      .pipe($.sassGlob())
       .pipe($.sass().on('error', $.sass.logError))
-      .pipe($.autoprefixer())
+      .pipe($.autoprefixer(["cover 95%"], {
+          cascade: false
+      }))
+      .pipe($.cleanCss())
       .pipe($.sourcemaps.write('./'))
       .pipe(gulp.dest(paths.styles.dest));
 };
 
-// Build Scss Style
+// Build Backend SCSS Style
 const buildBackOfficeStyles = () => {
-    
-  return gulp.src(files.stylesBackOffice)
-    .pipe($.sassBulkImport())
-    .pipe($.sass().on('error', $.sass.logError))
-    .pipe($.autoprefixer())
-    .pipe(gulp.dest(paths.styles.dest));
+    return gulp.src(files.stylesBackOffice)
+      //.pipe($.sourcemaps.init())
+      .pipe($.sassGlob())
+      .pipe($.sass().on('error', $.sass.logError))
+      .pipe($.autoprefixer(["cover 95%"], {
+            cascade: false
+        }))
+      .pipe($.cleanCss())
+      .pipe(gulp.dest(paths.styles.dest));
 };
 
-const run = gulp.series(/*cleanStylePartials, loadStylePartials,*/ buildStyle, buildBackOfficeStyles, libStyles);
+// Build SCSS docs
+const buildStyleDocumentation = () => {
+  const options = {
+      groups: {
+      '-library-': 'Library',
+      '-project-': 'Project'
+      },
+      dest: base.devCompiled + '/sassdoc',
+      sort: [
+          "group",
+          "file",
+          "line",
+          "access",
+      ]
+  };
+
+  return gulp.src(base.devRoot + '/**/*.scss')
+    .pipe(sassdoc(options));
+};
+
+const run = gulp.series(buildStyles, buildBackOfficeStyles, buildStyleDocumentation);
 
 exports.run = run;
 exports.reload = gulp.series(run, server.reload);

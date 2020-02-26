@@ -5,7 +5,7 @@
     "type": "object",
     "properties": {
         "nav": {
-            "$ref": "./parSiteNav.schema"
+            "$ref": "/parSiteNav"
         },
         "companyName": {
             "type": "string"

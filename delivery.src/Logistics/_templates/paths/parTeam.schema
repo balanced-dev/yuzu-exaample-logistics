@@ -4,10 +4,10 @@
             "/parSectionHeader"
         ],
         "/members/headshot": [
-            "/parDataImage"
+            "/dataImage"
         ],
         "/members/socialLinks/link": [
-            "/parDataLink"
+            "/dataLink"
         ]
     }
 }

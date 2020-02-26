@@ -402,9 +402,6 @@
     <Reference Include="YuzuDelivery.Core, Version=1.0.22.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\YuzuDelivery.Core.1.0.22\lib\net472\YuzuDelivery.Core.dll</HintPath>
     </Reference>
-    <Reference Include="YuzuDelivery.Umbraco.Blocks, Version=1.0.47.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\YuzuDelivery.Umbraco.Blocks.1.0.47\lib\net472\YuzuDelivery.Umbraco.Blocks.dll</HintPath>
-    </Reference>
     <Reference Include="YuzuDelivery.Umbraco.Forms, Version=1.0.10.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\YuzuDelivery.Umbraco.Forms.1.0.10\lib\net472\YuzuDelivery.Umbraco.Forms.dll</HintPath>
     </Reference>
@@ -417,230 +414,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Startup\MappingComposer.cs" />
-    <Compile Include="Startup\YuzuComposer.cs" />
-    <Compile Include="Startup\YuzuGridComposer.cs" />
-    <Compile Include="Startup\YuzuImportComposer.cs" />
-    <Compile Include="UmbracoModels\Blog.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\BlogArea.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\BlogHighlights.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\BlogSummaryGrid.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\ContactInformation.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\ContactInformationSection.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\Cta.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\File.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\Folder.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\GlobalArea.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\History.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\HomeHero.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\HomeHeroFeature.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\Image.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\ImageFeatureCarousel.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\ImageFeatureGrid.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\Member.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\PageHero.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\SectionGridPage.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\SectionHeader.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\Service.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\ServiceArea.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\ServiceSummaryGrid.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\SiteFooter.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\SiteFooterLink.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\SiteFooterLinkSection.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\SiteFooterNewsletterSection.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\SiteFooterSocialSection.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\SiteHeader.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\SiteNav.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\SiteNavNavSection.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\StepList.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\StepListStep.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\Team.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\TeamMember.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\TeamMemberArea.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\TeamSocialLink.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\Template.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\Testimonial.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\TestimonialArea.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\TestimonialCarousel.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\Video.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UmbracoModels\zGeneratedModels.cs">
-      <Generator>UmbracoModelsBuilder</Generator>
-      <LastGenOutput>zGeneratedModels.generated.cs</LastGenOutput>
-    </Compile>
-    <Compile Include="UmbracoModels\zGeneratedModels.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_BlogHighlights.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_BlogSummary.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_BlogSummaryGrid.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_ContactInformation.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_Cta.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_Form.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_History.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_HomeHero.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_ImageFeature.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_ImageFeatureCarousel.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_ImageFeatureGrid.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_PageHero.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_SectionGridConfig.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_SectionHeader.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_ServiceSummary.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_ServiceSummaryGrid.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_SiteFooter.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_SiteHeader.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_SiteNav.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_StepList.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_Team.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_TestimonialCarousel.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmBlock_Video.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmPage_SectionGridPage.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\vmPage_Template.generated.cs">
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\zGeneratedModels.cs">
-      <Generator>YuzuViewModelGenerator</Generator>
-      <LastGenOutput>zGeneratedModels.generated.cs</LastGenOutput>
-    </Compile>
-    <Compile Include="ViewModels\zGeneratedModels.generated.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>zGeneratedModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="_Specific\Mapping.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -649,6 +422,12 @@
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Startup\" />
+    <Folder Include="UmbracoModels\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="_Specific\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets" Condition="Exists('..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets')" />
