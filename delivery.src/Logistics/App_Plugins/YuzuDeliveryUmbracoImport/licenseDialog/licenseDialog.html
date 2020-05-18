@@ -4,7 +4,7 @@
 
         <umb-editor-view>
 
-            <umb-editor-header name="'Yuzu Licensing'"
+            <umb-editor-header name="'Yuzu Integrate Licensing'"
                 name-locked="true"
                 hide-alias="true"
                 hide-icon="true"
@@ -16,40 +16,49 @@
                 </umb-load-indicator>
 
                 <div class="umb-pane" ng-if="!vm.loading">
-
-                    <umb-box ng-if="vm.licenseMessage">
+                    <umb-box ng-if="vm.licenseStatus == 0">
+                        <umb-box-header title="{{vm.licenseMessage}}"></umb-box-header>
                         <umb-box-content>
-                            <p>{{vm.licenseMessage}}</p>
+                            <p>Sign up at <a target="_blank" href="http://balanced.dev/account/sign-up/"><strong>Balanced Dev</strong></a> for an activation key</p>
+                            <p>or use a full licence key</p>
+                            <p>&nbsp;</p>
+                            <umb-control-group label="Trial or License Activation Key" required="true">
+                                <input type="text" class="umb-textstring textstring input-block-level" name="activationKey" ng-model="vm.data.activationKey" required />
+                                <span ng-messages="createLicenseForm.activationKey.$error" show-validation-on-submit>
+                                    <span class="help-inline" ng-message="required"><localize key="general_required">Required</localize></span>
+                                </span>
+                            </umb-control-group>
                         </umb-box-content>
                     </umb-box>
 
-                    <umb-box ng-if="vm.licenseStatus == 0">
+                    <umb-box ng-if="vm.licenseStatus == 2">
+                        <umb-box-header title="License details"></umb-box-header>
                         <umb-box-content>
-                            <umb-control-group label="Email Address" required="true">
-                                <input type="text" class="umb-textstring textstring input-block-level" name="emailAddress" ng-model="vm.data.emailAddress" val-email required />
-
-                                <span ng-messages="createLicenseForm.emailAddress.$error" show-validation-on-submit>
-                                    <span class="help-inline" ng-message="required"><localize key="general_required">Required</localize></span>
-                                    <span class="help-inline" ng-message="valEmail"><localize key="general_email">Required</localize></span>
-                                </span>
+                            <umb-control-group label="Name">
+                                {{vm.licenseName}}
                             </umb-control-group>
-                            <p>Activate your trial licence uisng your email address</p>
+                            <umb-control-group label="Email">
+                                {{vm.licenseEmail}}
+                            </umb-control-group>
+                            <umb-control-group label="Key">
+                                {{vm.licenseKey}}
+                            </umb-control-group>
                         </umb-box-content>
                     </umb-box>
 
                     <umb-box ng-if="vm.licenseStatus == 1 || vm.licenseStatus == 3">
                         <umb-box-content>
+                            <p>Activate full licence key</p>
+                            <p>Login or sign up at <a target="_blank" href="https://balanced.dev/account/login/"><strong>Balanced Dev</strong></a></p>
+                            <p>&nbsp;</p>
                             <umb-control-group label="Activation Key" required="true">
                                 <input type="text" class="umb-textstring textstring input-block-level" name="activationKey" ng-model="vm.data.activationKey" required />
-
                                 <span ng-messages="createLicenseForm.activationKey.$error" show-validation-on-submit>
                                     <span class="help-inline" ng-message="required"><localize key="general_required">Required</localize></span>
                                 </span>
                             </umb-control-group>
-                            <p>Use an activation key to activate your license</p>
                         </umb-box-content>
                     </umb-box>
-
                 </div>
 
             </umb-editor-container>
@@ -64,12 +73,16 @@
                     </umb-button>
                     <umb-button ng-if="vm.licenseStatus != 2" type="button"
                                 button-style="success"
-                                label-key="general_submit"
+                                state="vm.buttonState"
+                                label="Activate"
                                 action="vm.submit(createLicenseForm)">
                     </umb-button>
-                    <button class="btn btn-warning" ng-if="vm.licenseStatus == 2" ng-click="vm.deactivateLicense()" type="button">
-                        <span>Deactivate</span>
-                    </button>
+                    <umb-button ng-if="vm.licenseStatus == 2" type="button"
+                                button-style="danger"
+                                state="vm.buttonState"
+                                label="Deactivate"
+                                action="vm.deactivateLicense()">
+                    </umb-button>
                 </umb-editor-footer-content-right>
             </umb-editor-footer>
 

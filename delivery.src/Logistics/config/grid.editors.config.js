@@ -7,12 +7,14 @@
   },
   {
     "name": "Image",
+    "nameTemplate": "{{ value && value.udi ? (value.udi | ncNodeName) : '' }}",
     "alias": "media",
     "view": "media",
     "icon": "icon-picture"
   },
   {
     "name": "Macro",
+    "nameTemplate": "{{ value && value.macroAlias ? value.macroAlias : '' }}",
     "alias": "macro",
     "view": "macro",
     "icon": "icon-settings-alt"
@@ -25,6 +27,7 @@
   },
   {
     "name": "Headline",
+    "nameTemplate": "{{ value }}",
     "alias": "headline",
     "view": "textstring",
     "icon": "icon-coin",
@@ -35,6 +38,7 @@
   },
   {
     "name": "Quote",
+    "nameTemplate": "{{ value ? value.substring(0,32) + (value.length > 32 ? '...' : '') : '' }}",
     "alias": "quote",
     "view": "textstring",
     "icon": "icon-quote",
@@ -44,27 +48,27 @@
     }
   },
   {
-    "name": "Section Grid",
-    "alias": "sectionGrid",
+    "name": "Row Builder",
+    "alias": "rowBuilder",
     "view": "/App_Plugins/DocTypeGridEditor/Views/doctypegrideditor.html",
     "render": "/App_Plugins/DocTypeGridEditor/Render/DocTypeGridEditor.cshtml",
     "icon": "icon-item-arrangement",
     "config": {
       "allowedDocTypes": [
-        "blogHighlights",
-        "cta",
-        "homeHero",
-        "imageFeatureCarousel",
-        "video",
-        "history",
-        "stepList",
-        "team",
-        "blogSummaryGrid",
-        "contactInformation",
-        "pageHero",
-        "serviceSummaryGrid",
-        "testimonialCarousel",
-        "imageFeatureGrid"
+        "\\bblogHighlights\\b",
+        "\\bcta\\b",
+        "\\bhomeHero\\b",
+        "\\bimageFeatureCarousel\\b",
+        "\\bvideo\\b",
+        "\\bhistory\\b",
+        "\\bstepList\\b",
+        "\\bteam\\b",
+        "\\bblogSummaryGrid\\b",
+        "\\bcontactInformation\\b",
+        "\\bpageHero\\b",
+        "\\bserviceSummaryGrid\\b",
+        "\\btestimonialCarousel\\b",
+        "\\bimageFeatureGrid\\b"
       ],
       "enablePreview": true,
       "viewPath": "/Views/Partials/Grid/Editors/DocTypeGridEditor/",

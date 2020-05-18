@@ -7,7 +7,7 @@
         "imageFeatures": {
             "type": "array",
             "items": {
-                "$ref": "/parImageFeature"
+                "$ref": "./parImageFeature.schema"
             }
         },
         "_ref": {

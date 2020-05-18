@@ -5,10 +5,10 @@
     "type": "object",
     "properties": {
         "title": {
-            "$ref": "/parSectionHeader"
+            "$ref": "./parSectionHeader.schema"
         },
         "image": {
-            "$ref": "/dataImage"
+            "$ref": "./dataImage.schema"
         },
         "steps": {
             "type": "array",

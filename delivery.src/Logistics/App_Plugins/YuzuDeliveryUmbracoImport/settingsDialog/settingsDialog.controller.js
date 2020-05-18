@@ -63,9 +63,6 @@ function settingsDialog($scope, formHelper, yuzuImportResources) {
 
     };
 
-    vm.toggle = function () {
-        vm.storeContentAs.addAreaNode = !vm.storeContentAs.addAreaNode;
-    };
 };
 
 angular.module("umbraco").controller("Yuzu.Delivery.UmbracoImportViewModel.SettingsDialog", settingsDialog);

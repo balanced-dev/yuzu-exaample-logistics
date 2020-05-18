@@ -5,10 +5,10 @@
     "type": "object",
     "properties": {
         "link": {
-            "$ref": "/dataLink"
+            "$ref": "./dataLink.schema"
         },
         "image": {
-            "$ref": "/dataImage"
+            "$ref": "./dataImage.schema"
         },
         "title": {
             "type": "string"
@@ -16,19 +16,14 @@
         "summary": {
             "type": "string"
         },
-        "meta": {
-            "type": "object",
-            "properties": {
-                "author": {
-                    "type": "string"
-                },
-                "date": {
-                    "type": "string"
-                },
-                "category": {
-                    "type": "string"
-                }
-            }
+        "author": {
+            "type": "string"
+        },
+        "date": {
+            "type": "string"
+        },
+        "category": {
+            "type": "string"
         },
         "_ref": {
             "type": "string"

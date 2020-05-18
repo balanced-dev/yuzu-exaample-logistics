@@ -1,5 +1,5 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
-@{ var template = Umbraco.ContentAtRoot().FirstOrDefault().Descendant<YuzuDelivery.UmbracoModels.Template>(); }
+@{ var root = Umbraco.ContentAtRoot().FirstOrDefault() as Home; }
 <!doctype html>
 <html lang="en" data-frontend-environment="true">
 <head>
@@ -26,11 +26,11 @@
 
     <div class="site-wrap">
 
-        @(Html.RenderFETemplate<vmBlock_SiteHeader>(new RenderSettings() { Template = "parSiteHeader", MapFrom = template.Header }))
+        @(Html.RenderYuzu<vmBlock_SiteHeader>(root))
 
         @RenderBody()
 
-        @(Html.RenderFETemplate<vmBlock_SiteFooter>(new RenderSettings() { Template = "parSiteFooter", MapFrom = template.Footer }, new Dictionary<string, object>() { { "HtmlHelper", Html } }))
+        @(Html.RenderYuzu<vmBlock_SiteFooter>(root))
 
     </div>
 

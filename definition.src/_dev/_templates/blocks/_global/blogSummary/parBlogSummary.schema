@@ -16,19 +16,14 @@
         "summary": {
             "type": "string"
         },
-        "meta": {
-            "type": "object",
-            "properties": {
-                "author": {
-                    "type": "string"
-                },
-                "date": {
-                    "type": "string"
-                },
-                "category": {
-                    "type": "string"
-                }
-            }
+        "author": {
+            "type": "string"
+        },
+        "date": {
+            "type": "string"
+        },
+        "category": {
+            "type": "string"
         }
     },
     "additionalProperties": false

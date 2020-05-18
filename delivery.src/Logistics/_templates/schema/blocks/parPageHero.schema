@@ -5,7 +5,7 @@
     "type": "object",
     "properties": {
         "image": {
-            "$ref": "/dataImage"
+            "$ref": "./dataImage.schema"
         },
         "title": {
             "type": "string"
@@ -13,7 +13,7 @@
         "breadcrumbs": {
             "type": "array",
             "items": {
-                "$ref": "/dataLink"
+                "$ref": "./dataLink.schema"
             }
         },
         "_ref": {

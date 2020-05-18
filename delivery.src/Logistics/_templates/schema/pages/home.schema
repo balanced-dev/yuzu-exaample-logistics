@@ -1,0 +1,19 @@
+{
+    "id": "/home",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "header": {
+            "$ref": "./parSiteHeader.schema"
+        },
+        "content": {
+            "$ref": "./dataRows.schema",
+            "anyOfType": "parRowBuilder"
+        },
+        "footer": {
+            "$ref": "./parSiteFooter.schema"
+        }
+    },
+    "additionalProperties": false
+}

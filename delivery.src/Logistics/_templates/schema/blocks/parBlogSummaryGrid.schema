@@ -7,7 +7,7 @@
         "blogSummaries": {
             "type": "array",
             "items": {
-                "$ref": "/parBlogSummary"
+                "$ref": "./parBlogSummary.schema"
             }
         },
         "paginationLinks": {
@@ -18,7 +18,7 @@
                         "type": "boolean"
                     },
                     "link": {
-                        "$ref": "/dataLink"
+                        "$ref": "./dataLink.schema"
                     }
                 }
             }

@@ -8,10 +8,10 @@
             "type": "string"
         },
         "image": {
-            "$ref": "/dataImage"
+            "$ref": "./dataImage.schema"
         },
         "link": {
-            "$ref": "/dataLink"
+            "$ref": "./dataLink.schema"
         },
         "features": {
             "type": "array",
@@ -27,7 +27,7 @@
                         "type": "string"
                     },
                     "form": {
-                        "$ref": "/dataForm",
+                        "$ref": "./dataForm.schema",
                         "anyOfType": "parFormBuilder"
                     }
                 }
