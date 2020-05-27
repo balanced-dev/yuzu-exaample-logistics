@@ -5,7 +5,7 @@
     "type": "object",
     "properties": {
         "content": {
-            "$ref": "./dataRows.schema",
+            "$ref": "/dataRows",
             "anyOfType": "parRowBuilder"
         }
     },

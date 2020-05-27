@@ -8,7 +8,7 @@
             "type": "string"
         },
         "link": {
-            "$ref": "./dataLink.schema"
+            "$ref": "/dataLink"
         },
         "_ref": {
             "type": "string"

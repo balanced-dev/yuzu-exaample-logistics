@@ -50,7 +50,7 @@
         "actionLinks": {
             "type": "array",
             "items": {
-                "$ref": "./dataLink.schema"
+                "$ref": "/dataLink"
             }
         },
         "_ref": {

@@ -5,7 +5,7 @@
     "type": "object",
     "properties": {
         "title": {
-            "$ref": "./parSectionHeader.schema"
+            "$ref": "/parSectionHeader"
         },
         "members": {
             "type": "array",
@@ -13,7 +13,7 @@
                 "type": "object",
                 "properties": {
                     "headshot": {
-                        "$ref": "./dataImage.schema"
+                        "$ref": "/dataImage"
                     },
                     "personName": {
                         "type": "string"
@@ -32,7 +32,7 @@
                                     "type": "string"
                                 },
                                 "link": {
-                                    "$ref": "./dataLink.schema"
+                                    "$ref": "/dataLink"
                                 }
                             }
                         }

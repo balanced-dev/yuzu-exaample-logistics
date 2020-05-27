@@ -49,6 +49,9 @@ paths = {
 			dest: base.devCompiled + '/html/',
 			dist: base.distTemplates,
 			distHtml: base.distClient + '/html/'
+		},
+		templatePaths: {
+			dest: base.devCompiled + '/'
 		}
 	},
 	images: {
@@ -65,6 +68,10 @@ paths = {
 		src: base.devSource + '/styles/scss',
 		dest: base.devCompiled + '/styles/',
 		dist: base.distClient + '/styles/'
+	},
+	yuzuDefUi: {
+		src: base.devRoot + '/yuzu-def-ui',
+		dist: base.distRoot+ '/yuzu-def-ui'
 	}
 };
 
@@ -87,6 +94,7 @@ files = {
 	templatePartials: [paths.handlebars.dataStuctures.src, paths.handlebars.blocks.src],
 	templates: paths.handlebars.templates.src,
 	templateHTML: paths.handlebars.templates.dest,
+	templatePaths: base.devCompiled + '/templatePaths.json',
   	html: paths.handlebars.templates.dest+ '**/*.html'
 };
 

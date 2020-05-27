@@ -62,8 +62,8 @@
       },
       "documentTypeAlias": "home",
       "properties": {
-        "Title": 65,
-        "Form": 66
+        "Title": "22598432-c84a-4a30-bbb3-05b724d8717a",
+        "Form": "86d78d81-0a2f-47dc-9c0c-3b713e15cc3f"
       }
     },
     "vmSub_SiteFooterSocialSection": {
@@ -76,8 +76,8 @@
       },
       "documentTypeAlias": "home",
       "properties": {
-        "Title": 67,
-        "Links": 68
+        "Title": "f724f460-93fc-4df7-8f8d-b9dd83a97810",
+        "Links": "6d8d0d21-97c0-46b6-9c30-1f8483afea6e"
       }
     },
     "vmBlock_SiteNav": {
@@ -89,9 +89,7 @@
         "groupName": "Nav"
       },
       "documentTypeAlias": "home",
-      "properties": {
-        "NavSections": 71
-      }
+      "properties": {}
     },
     "vmSub_ContactInformationContactDetails": {
       "storeContentAs": {
@@ -103,7 +101,7 @@
       },
       "documentTypeAlias": "contactInformation",
       "properties": {
-        "Sections": 75
+        "Sections": "fbbb0788-1d1b-49c4-acc3-aff32b8cd08d"
       }
     },
     "vmSub_ContactInformationMoreInfo": {
@@ -116,9 +114,9 @@
       },
       "documentTypeAlias": "contactInformation",
       "properties": {
-        "Title": 79,
-        "Text": 80,
-        "Link": 81
+        "Title": "98a10a5f-64ea-4222-8254-cd8a81206d74",
+        "Text": "7f25f8a3-b1ee-4e8c-b360-2d6298d5ee5d",
+        "Link": "648ea5bc-d04f-45e4-9dac-a9253ea30b62"
       }
     },
     "vmBlock_SiteFooter": {
@@ -131,7 +129,7 @@
       },
       "documentTypeAlias": "home",
       "properties": {
-        "LinkSections": 82
+        "LinkSections": "dc1ddff1-8e81-4700-871c-2c8a3fe0c7b3"
       }
     },
     "vmBlock_SiteHeader": {
@@ -144,13 +142,33 @@
       },
       "documentTypeAlias": "home",
       "properties": {
-        "CompanyName": 85
+        "CompanyName": "0faa8b0c-db2b-4b8e-a0a2-42e740413fa7"
       }
     }
   },
   "ignoreViewmodels": [
     "vmBlock_RowBuilderConfig"
   ],
-  "ignoreViewmodelProperties": [],
-  "manualMappers": []
+  "ignoreViewmodelProperties": [
+    {
+      "Key": "vmBlock_SiteNav",
+      "Value": "NavSections"
+    }
+  ],
+  "manualMappers": [
+    {
+      "dest": "vmBlock_SiteNav",
+      "destMember": "NavSections",
+      "source": "home",
+      "mapper": "SiteNavNavSectionsMemberResolver",
+      "group": "Nav"
+    },
+    {
+      "dest": "vmBlock_PageHero",
+      "destMember": "",
+      "source": "pageHero",
+      "mapper": "PageHeroTypeAfterMap",
+      "group": ""
+    }
+  ]
 }

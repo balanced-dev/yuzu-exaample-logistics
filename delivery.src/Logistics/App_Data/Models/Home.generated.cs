@@ -66,13 +66,6 @@ namespace YuzuDelivery.UmbracoModels
 		public string HeaderCompanyName => this.Value<string>("headerCompanyName");
 
 		///<summary>
-		/// Nav Sections
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.1")]
-		[ImplementPropertyType("navNavSections")]
-		public global::System.Collections.Generic.IEnumerable<global::YuzuDelivery.UmbracoModels.SiteNavNavSection> NavNavSections => this.Value<global::System.Collections.Generic.IEnumerable<global::YuzuDelivery.UmbracoModels.SiteNavNavSection>>("navNavSections");
-
-		///<summary>
 		/// NewsletterSection Form
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.1")]

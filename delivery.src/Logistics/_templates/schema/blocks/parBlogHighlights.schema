@@ -5,12 +5,12 @@
     "type": "object",
     "properties": {
         "title": {
-            "$ref": "./parSectionHeader.schema"
+            "$ref": "/parSectionHeader"
         },
         "posts": {
             "type": "array",
             "items": {
-                "$ref": "./parBlogSummary.schema"
+                "$ref": "/parBlogSummary"
             }
         },
         "_ref": {

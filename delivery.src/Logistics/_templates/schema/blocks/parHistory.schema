@@ -5,7 +5,7 @@
     "type": "object",
     "properties": {
         "title": {
-            "$ref": "./parSectionHeader.schema"
+            "$ref": "/parSectionHeader"
         },
         "rte": {
             "type": "string"
@@ -13,11 +13,11 @@
         "serviceSummaries": {
             "type": "array",
             "items": {
-                "$ref": "./parServiceSummary.schema"
+                "$ref": "/parServiceSummary"
             }
         },
         "image": {
-            "$ref": "./dataImage.schema"
+            "$ref": "/dataImage"
         },
         "_ref": {
             "type": "string"

@@ -1,0 +1,174 @@
+{
+  "models": {
+    "vmBlock_BlogSummary": {
+      "storeContentAs": {
+        "$type": "YuzuDelivery.Umbraco.Import.GlobalStoreContentAs, YuzuDelivery.Umbraco.Import",
+        "parentContentId": "1069",
+        "addAreaNode": false,
+        "primaryPropertyName": "title",
+        "propertyPrefix": null,
+        "type": 1,
+        "groupName": null
+      },
+      "documentTypeAlias": "blog",
+      "properties": {}
+    },
+    "vmBlock_ServiceSummary": {
+      "storeContentAs": {
+        "$type": "YuzuDelivery.Umbraco.Import.GlobalStoreContentAs, YuzuDelivery.Umbraco.Import",
+        "parentContentId": "1070",
+        "addAreaNode": false,
+        "primaryPropertyName": "title",
+        "propertyPrefix": null,
+        "type": 1,
+        "groupName": null
+      },
+      "documentTypeAlias": "service",
+      "properties": {}
+    },
+    "vmBlock_ImageFeature": {
+      "storeContentAs": {
+        "$type": "YuzuDelivery.Umbraco.Import.GlobalStoreContentAs, YuzuDelivery.Umbraco.Import",
+        "parentContentId": "1070",
+        "addAreaNode": false,
+        "primaryPropertyName": "title",
+        "propertyPrefix": null,
+        "type": 1,
+        "groupName": null
+      },
+      "documentTypeAlias": "service",
+      "properties": {}
+    },
+    "vmSub_TestimonialCarouselTestimonial": {
+      "storeContentAs": {
+        "$type": "YuzuDelivery.Umbraco.Import.GlobalStoreContentAs, YuzuDelivery.Umbraco.Import",
+        "parentContentId": "1071",
+        "addAreaNode": false,
+        "primaryPropertyName": "personName",
+        "propertyPrefix": null,
+        "type": 1,
+        "groupName": null
+      },
+      "documentTypeAlias": "testimonialItem",
+      "properties": {}
+    },
+    "vmSub_SiteFooterNewsletterSection": {
+      "storeContentAs": {
+        "$type": "YuzuDelivery.Umbraco.Import.GroupStoreContentAs, YuzuDelivery.Umbraco.Import",
+        "parentPropertyName": "NewsletterSection",
+        "parentPropertyType": "vmBlock_SiteFooter",
+        "type": 2,
+        "groupName": "NewsletterSection"
+      },
+      "documentTypeAlias": "home",
+      "properties": {
+        "Title": 65,
+        "Form": 66
+      }
+    },
+    "vmSub_SiteFooterSocialSection": {
+      "storeContentAs": {
+        "$type": "YuzuDelivery.Umbraco.Import.GroupStoreContentAs, YuzuDelivery.Umbraco.Import",
+        "parentPropertyName": "SocialSection",
+        "parentPropertyType": "vmBlock_SiteFooter",
+        "type": 2,
+        "groupName": "SocialSection"
+      },
+      "documentTypeAlias": "home",
+      "properties": {
+        "Title": 67,
+        "Links": 68
+      }
+    },
+    "vmBlock_SiteNav": {
+      "storeContentAs": {
+        "$type": "YuzuDelivery.Umbraco.Import.GroupStoreContentAs, YuzuDelivery.Umbraco.Import",
+        "parentPropertyName": "Nav",
+        "parentPropertyType": "vmBlock_SiteHeader",
+        "type": 2,
+        "groupName": "Nav"
+      },
+      "documentTypeAlias": "home",
+      "properties": {}
+    },
+    "vmSub_ContactInformationContactDetails": {
+      "storeContentAs": {
+        "$type": "YuzuDelivery.Umbraco.Import.GroupStoreContentAs, YuzuDelivery.Umbraco.Import",
+        "parentPropertyName": "ContactDetails",
+        "parentPropertyType": "vmBlock_ContactInformation",
+        "type": 2,
+        "groupName": "ContactDetails"
+      },
+      "documentTypeAlias": "contactInformation",
+      "properties": {
+        "Sections": 75
+      }
+    },
+    "vmSub_ContactInformationMoreInfo": {
+      "storeContentAs": {
+        "$type": "YuzuDelivery.Umbraco.Import.GroupStoreContentAs, YuzuDelivery.Umbraco.Import",
+        "parentPropertyName": "MoreInfo",
+        "parentPropertyType": "vmBlock_ContactInformation",
+        "type": 2,
+        "groupName": "MoreInfo"
+      },
+      "documentTypeAlias": "contactInformation",
+      "properties": {
+        "Title": 79,
+        "Text": 80,
+        "Link": 81
+      }
+    },
+    "vmBlock_SiteFooter": {
+      "storeContentAs": {
+        "$type": "YuzuDelivery.Umbraco.Import.GroupStoreContentAs, YuzuDelivery.Umbraco.Import",
+        "parentPropertyName": "Footer",
+        "parentPropertyType": "vmPage_Home",
+        "type": 2,
+        "groupName": "Footer"
+      },
+      "documentTypeAlias": "home",
+      "properties": {
+        "LinkSections": 82
+      }
+    },
+    "vmBlock_SiteHeader": {
+      "storeContentAs": {
+        "$type": "YuzuDelivery.Umbraco.Import.GroupStoreContentAs, YuzuDelivery.Umbraco.Import",
+        "parentPropertyName": "Header",
+        "parentPropertyType": "vmPage_Home",
+        "type": 2,
+        "groupName": "Header"
+      },
+      "documentTypeAlias": "home",
+      "properties": {
+        "CompanyName": 85
+      }
+    }
+  },
+  "ignoreViewmodels": [
+    "vmBlock_RowBuilderConfig"
+  ],
+  "ignoreViewmodelProperties": [
+    {
+      "Key": "vmBlock_SiteNav",
+      "Value": "NavSections"
+    }
+  ],
+  "manualMappers": [
+    {
+      "dest": "vmBlock_SiteNav",
+      "destMember": "NavSections",
+      "source": "home",
+      "mapper": "SiteNavNavSectionsMemberResolver",
+      "group": "Nav"
+    },
+    {
+      "dest": "vmBlock_PageHero",
+      "destMember": "",
+      "source": "pageHero",
+      "mapper": "PageHeroTypeAfterMap",
+      "group": ""
+    }
+  ]
+}
